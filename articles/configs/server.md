@@ -170,6 +170,10 @@ migration = 1 # Processing of netowner calculations
 syncSend = 8 # Processing of sending sync data, should be always the highest amount
 syncReceive = 2 # Processing of receiving sync data, should be around 1/4 of syncSend
 
+# Processing of resource client files (does not affect --justpack at the moment of writing)
+# For example, when your hardware has 12 threads you can use specify 12 here since they are only used at server startup
+resourceArchiveThreads = 12
+
 [antiCheat]
 # Enables server-side weapon checks
 # For example, if a weapon is given via giveWeaponToPed native it won't be synced
